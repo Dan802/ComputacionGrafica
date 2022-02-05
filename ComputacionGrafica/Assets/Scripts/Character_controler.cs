@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Character_controler : MonoBehaviour
 {
-    [SerializeField] private Rigidbody rigibodyNinja;
+    //[SerializeField] private Rigidbody rigibodyNinja;
     Animator animator;
 
     // Start is called before the first frame update
@@ -18,39 +18,21 @@ public class Character_controler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool iswalking = Input.GetKeyDown("w");
-        //bool isrunning = Input.GetKeyDown(KeyCode.LeftShift) && Input.GetKeyDown("w");
+        bool forwardPressed = Input.GetKey("w");
+        bool iswalking = animator.GetBool("Walking");
+        bool runPressed = Input.GetKey("left shift");
+        bool isrunning = animator.GetBool("Running");
 
-        if (Input.GetKeyDown("w"))
-        {
+        if (!iswalking && forwardPressed)
             animator.SetBool("Walking", true);
-            animator.SetBool("Running", false);
-            animator.SetBool("Idle", false);
-        }
-        
-        if(Input.GetKeyUp("w"))
-        {
+
+        if (iswalking && !forwardPressed)
             animator.SetBool("Walking", false);
-            animator.SetBool("Idle", true);
-        }
 
-        //if (Input.GetKeyDown(KeyCode.LeftShift) && Input.GetKeyDown("w"))
-        //{
-        //    animator.SetBool("Walking", false);
-        //    animator.SetBool("Running", true);
-        //    animator.SetBool("Idle", false);
-        //}
-        //else
-        //{
-        //    animator.SetBool("Idle", true);
-        //}
+        if (!isrunning && forwardPressed && runPressed)
+            animator.SetBool("Running", true);
 
-
-        /*if (isrunning == false && iswalking == false)
-        {
-            animator.SetBool("Walking", false);
+        if (isrunning && (!forwardPressed || !runPressed))
             animator.SetBool("Running", false);
-            animator.SetBool("Idle", true);
-        }*/
     }
 }

@@ -139,7 +139,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 2d3526e5ddc7f704a8944bef93e6134b, type: 2}
-  m_CullingMode: 1
+  m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -164,7 +164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab17e6e3ef60ad04c8e703e69879499e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigibodyNinja: {fileID: 0}
 --- !u!1 &481487632
 GameObject:
   m_ObjectHideFlags: 0
