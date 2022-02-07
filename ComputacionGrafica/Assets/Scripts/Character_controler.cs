@@ -8,9 +8,8 @@ public class Character_controler : MonoBehaviour
 {
     [SerializeField] private ParticleSystem Ps_Anticipacion;
     [SerializeField] private ParticleSystem Ps_Escudo;
-    public GameObject Escudo;
-    public GameObject Anticipacion;
-    Animator animator;
+    [SerializeField] private Animator animator;
+    [SerializeField] private Animator particles;
 
     // Start is called before the first frame update
     void Start()
@@ -43,23 +42,24 @@ public class Character_controler : MonoBehaviour
         if (defensePressed && !isdefending)
         {
             animator.SetBool("Defense", true);
-
-            Ps_Anticipacion.Play();
-
-            if (!Ps_Anticipacion.IsAlive())
-            {
-                Debug.Log("activado");
-                Escudo.SetActive(true);
-                Ps_Escudo.Play();
-            }
         }
-
-        
 
         if (!defensePressed && isdefending)
         {
             animator.SetBool("Defense", false);
-            Escudo.SetActive(false);
         }
+    }
+
+    public void Primero ()
+    {
+        Ps_Anticipacion.Play();
+    }
+
+    public void Segundo ()
+    {
+        Ps_Escudo.Play();
+        particles.SetBool("Begin", true);
+
+        //AnimatorStateTransition.hasExitTime = true;
     }
 }

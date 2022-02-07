@@ -229,7 +229,7 @@ AnimatorStateTransition:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
+  m_Name: Defensant
   m_Conditions:
   - m_ConditionMode: 2
     m_ConditionEvent: Defense
@@ -241,7 +241,7 @@ AnimatorStateTransition:
   m_IsExit: 0
   serializedVersion: 3
   m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
+  m_TransitionOffset: 0.004347472
   m_ExitTime: 0.94140625
   m_HasExitTime: 0
   m_HasFixedDuration: 1
