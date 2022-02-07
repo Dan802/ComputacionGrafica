@@ -11,7 +11,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Ch24_Body
-    second: {instanceID: 0}
+    second: {fileID: 2100000, guid: 0943109f32aad894a85d9bd410431e91, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
