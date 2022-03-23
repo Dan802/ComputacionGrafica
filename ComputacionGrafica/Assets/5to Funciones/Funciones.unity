@@ -508,16 +508,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1876776311}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de2ea6e21e0e4374890ae2e145e3345e, type: 3}
+  m_Script: {fileID: 11500000, guid: 862c4920cf4e35149b82ca6c7df44561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aTarget: {fileID: 913034318}
+  target: {fileID: 913034318}
   travelSpeed: 1
   planeNormal: 1
   startAngle: 0
-  alpha: 0
-  r: 3
-  angulo: 90
+  radio: 2
 --- !u!4 &1876776313
 Transform:
   m_ObjectHideFlags: 0
