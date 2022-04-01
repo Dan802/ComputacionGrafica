@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_Aguaytierra
-  m_Shader: {fileID: -6465566751694194690, guid: 94a404c626724b14c8c1922c2b7d2c70, type: 3}
+  m_Name: Shader Graphs_Aguaytierra2
+  m_Shader: {fileID: -6465566751694194690, guid: fc1b321817b6d9142b18d2dd9d0ddd29, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -24,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_76ef5c101905461a8af7854fabdd5dc7:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: f7e072df766408242938d03e985a93a6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_c1e31e8af8d04fd8b5b1c1e64f7b1546:
@@ -44,11 +44,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_226923129f3c4f74b5247f34450e23b5: 1
-    - Vector1_37204dd650bb46859e3d8280a94a6993: 1.58
-    - Vector1_bb77bb7876ba4ec39ade42be9b01898d: 0.933
+    - Vector1_37204dd650bb46859e3d8280a94a6993: 0.54
+    - Vector1_bb77bb7876ba4ec39ade42be9b01898d: 1
+    - Vector1_e11d719d47cd42079c4ce09497ad6743: 0.5
     m_Colors:
-    - Color_043eb25f33504492a93265ad1e41dde9: {r: 1, g: 1, b: 1, a: 0}
-    - Color_6ecec17cfa1d418ba3607552cda01ce2: {r: 0.54451746, g: 0.68625677, b: 0.9716981, a: 0.38431373}
     - Vector2_b7dc4a10bcc44446b35bd63ec18ce78e: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
